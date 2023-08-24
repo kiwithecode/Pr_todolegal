@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Color de fondo blanco */
+    padding: 10px 20px; /* Espaciado interior */
+   
+    width: 100%; /* Ocupar todo el ancho */
+    position: fixed; /* Fijar en la parte superior */
+    top: 0; /* Desde la parte superior */
+    left: 0; /* Hasta la izquierda */
+    z-index: 1000; /* Capa superior */
+  }
+  
+  .logo img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Mover a la derecha */
+  }
+  
+  .secondary-logo img {
+    height: 20px;
+    width: auto;
+    margin-right: 20px; /* Espacio entre secondary-logo y drawer */
+  }
+  
+  .drawer span {
+    font-size: 40px; /* Aumentar el tamaño del ícono */
+    cursor: pointer;
+    color: #3A77EC; /* Cambiar el color del ícono */
+    margin-right: 25px; /* Espacio entre secondary-logo y drawer */
+    /* Agregar transición de color al hover */
+  }
+  
+  /* Media query para ocultar el secondary logo en dispositivos móviles */
+  @media (max-width: 768px) {
+    .secondary-logo {
+      display: none;
+    }
+  }

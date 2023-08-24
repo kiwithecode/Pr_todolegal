@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap');
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.action-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px 150px;
+    margin-top: -10px;
+    width: 80%;
+}
+.info-container h1 { /* Estilo específico para el h1 dentro de .info-container */
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: #187DFB;
+    font-size: 60px; /* Puedes ajustar este valor si necesitas que sea más grande o más pequeño */
+}
+.action-container > p { /* Sólo afecta al párrafo directamente dentro de .action-container */
+    font-weight: bold;
+    color: #002179;
+    font-size: 20px;
+    margin-right: auto; 
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-left: 40px; 
+}
+
+.step p {
+    margin-left: 10px; 
+}
+
+.circle {
+    border: 2px solid #3A77EC;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.spacer {
+    height: 40px;
+}
+
+.bottom-containers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.info-container, .upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 10px;
+    width: 45%;
+}
+.info-container p {
+    color: #707070;
+    font-size: 20px; /* Puedes ajustar el tamaño de letra según tus necesidades */
+}
+
+.info-container .highlighted {
+    color: #187DFB;
+}
+.upload-container {
+    margin-top: 0;
+}
+/* Ocultar el primer contenedor en versiones móviles */
+@media (max-width: 768px) { 
+    /* Contenedor tres encima del contenedor dos */
+    .bottom-containers {
+        flex-direction: column;
+    }
+    .info-container {
+        padding: 15px; /* Aumentar el padding para mejorar la presentación en móviles */
+    }
+
+    .info-container h1 {
+        font-size: 32px; /* Reducir el tamaño del título para adaptarse a pantallas más pequeñas */
+        margin-top: 0; /* Reducir el margen superior para ahorrar espacio vertical */
+    }
+
+    .info-container img {
+        width: 80%; /* Reducir el ancho de la imagen para que se ajuste bien en pantallas más pequeñas */
+        max-width: 300px; /* Establecer un ancho máximo para la imagen */
+        margin: 10px 0; /* Añadir margen alrededor de la imagen para separarla del contenido circundante */
+    }
+
+    .info-container p {
+        font-size: 16px; /* Reducir el tamaño de letra para adaptarse a pantallas más pequeñas */
+        text-align: center; /* Centrar el texto para mejorar la presentación en móviles */
+    }
+
+    .info-container .highlighted {
+        display: inline-block; /* Hacer que el texto destacado sea un bloque en línea para mantener el diseño */
+    }
+    /* Ajustes para mejorar la responsividad de los contenedores en dispositivos móviles */
+     .upload-container {
+        width: 90%; /* Ampliamos el ancho para aprovechar más espacio en dispositivos móviles */
+        margin: 10px 0; /* Añadimos margen vertical para separar los contenedores */
+    }
+    .info-container {
+        padding: 30px 15px; /* Aumentar el padding horizontal para darle una forma más rectangular */
+        width: 80%; /* Ajustamos el ancho para que sea más rectangular y ocupe más espacio */
+        box-sizing: border-box; /* Asegurarse de que el padding se incluya en el ancho total */
+        margin: 10px auto; /* Centrar el contenedor en el eje horizontal */
+    }
+
+    /* Ocultar el primer contenedor */
+    .action-container {
+        display: none;
+    }
+}
+
+
+/* Media queries adicionales para otros puntos de corte, si los necesitas */
+
+/* Para tablets o dispositivos de tamaño medio */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Aquí puedes agregar reglas específicas para tablets o dispositivos de tamaño medio */
+}
+
+/* Para pantallas grandes */
+@media (min-width: 1025px) {
+    /* Aquí puedes agregar reglas específicas para pantallas más grandes */
+}
