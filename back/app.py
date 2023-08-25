@@ -6,7 +6,7 @@ from datetime import datetime
 app = Flask(__name__)
 CORS(app)
 
-WEBHOOK_URL = "https://webhook.site/60ec9d8e-fd7f-4b68-82aa-ab23ce5ffde2"
+WEBHOOK_URL = "https://webhook.site/88618bda-c243-4adc-b85a-e31c0f08873a"
 ALLOWED_EXTENSIONS = set(['pdf', 'doc', 'docx', 'txt'])
 
 # Check for allowed file types
