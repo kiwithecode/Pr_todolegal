@@ -124,21 +124,19 @@
         margin: 10px auto; /* Centrar el contenedor en el eje horizontal */
     }
 
-    /* Ocultar el primer contenedor */
+    
     .action-container {
         display: none;
     }
 }
 
 
-/* Media queries adicionales para otros puntos de corte, si los necesitas */
 
-/* Para tablets o dispositivos de tamaño medio */
 @media (min-width: 769px) and (max-width: 1024px) {
-    /* Aquí puedes agregar reglas específicas para tablets o dispositivos de tamaño medio */
+    
 }
 
 /* Para pantallas grandes */
 @media (min-width: 1025px) {
-    /* Aquí puedes agregar reglas específicas para pantallas más grandes */
+    
 }
