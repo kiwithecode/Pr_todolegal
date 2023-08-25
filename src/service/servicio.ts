@@ -1,6 +1,6 @@
 // service.ts
 
-const API_ENDPOINT = 'http://127.0.0.1:5000/send_data';  
+const API_ENDPOINT = 'https://www.pythonanywhere.com/user/kevinkiwi/shares/858437f206ea4e1d8f0f5a33a9d07498/send_data';  
 
 export async function sendData(name: string, file: File): Promise<any> {
   const formData = new FormData();
